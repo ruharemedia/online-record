@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class RecordEssence extends Model
@@ -13,4 +14,9 @@ class RecordEssence extends Model
         'valid_from',
         'valid_to'
     ];
+
+    public function essenceCells(): BelongsToMany
+    {
+        return $this->belongsToMany(RecordCells::class);
+    }
 }
