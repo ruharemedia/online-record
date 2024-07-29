@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name', 255)->comment('Essence name| example => doctor');
             $table->date('valid_from')->comment('Date start');
             $table->date('valid_to')->nullable()->comment('Date end | if empty, no ending');
+            $table->unsignedInteger('record_date_range')->comment('Range record available');
             $table->timestamps();
             $table->softDeletes();
         });

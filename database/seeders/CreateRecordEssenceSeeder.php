@@ -14,12 +14,27 @@ class CreateRecordEssenceSeeder extends Seeder
     {
         RecordEssence::create([
             'name' => 'Alex Pushkin',
+            'valid_from' => now()->addDays(-15),
+            'valid_to' => now()->addDays(14),
+            'record_date_range' => 14
+        ]);
+
+        RecordEssence::create([
+            'name' => 'Alex Pushkin',
             'valid_from' => now(),
+            'valid_to' => now()->addDays(14),
+            'record_date_range' => 14
         ]);
         RecordEssence::create([
             'name' => 'Alex Ploshkin',
             'valid_from' => now(),
-            'valid_to' => now()->addDays(1)
+            'valid_to' => now()->addDays(1),
+            'record_date_range' => 7
+        ]);
+        RecordEssence::create([
+            'name' => 'Alex Pushkin',
+            'valid_from' => now()->addDays(15),
+            'record_date_range' => 14
         ]);
     }
 }

@@ -12,7 +12,8 @@ class RecordEssence extends Model
     public $fillable = [
         'name',
         'valid_from',
-        'valid_to'
+        'valid_to',
+        'record_date_range'
     ];
 
     public function essenceCells(): BelongsToMany
