@@ -6,7 +6,7 @@ use App\Models\RecordCells;
 use App\Services\CellIntervalService;
 use Illuminate\Database\Seeder;
 
-class CrateCellsSeeder extends Seeder
+class CreateCellsSeeder extends Seeder
 {
     /**
      * Seeder create default cells
