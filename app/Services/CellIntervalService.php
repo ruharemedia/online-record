@@ -15,8 +15,6 @@ class CellIntervalService{
      *
      * @return array
      */
-
-    //TODO есть проблема с последним временем
     public static function createCells(int $interval, string $startTime, string $endTime) :mixed
     {
         $fullDates = CarbonPeriod::create($startTime, "$interval minutes", $endTime);
