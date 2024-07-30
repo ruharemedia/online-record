@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             CreateRecordEssenceSeeder::class,
             CreateCellsSeeder::class,
             CreateRelationRecordEssenceRecordCellsSeeder::class,
+            CreateDoctorSeeder::class,
         ]);
     }
 }
